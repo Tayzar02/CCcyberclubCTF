@@ -1,0 +1,13 @@
+<html>
+  <h3>See your uploaded files here: </h3>
+  <body>
+    <script type="text/php">
+    <?php
+    $dir = 'uploads/';
+    $files = scandir($dir);
+    echo "Directory contents: \n";
+    print_r($files);
+    ?>
+    </script>
+  </body>
+</html>
